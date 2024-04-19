@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="title">Formulário de Pesquisa</h1>
+        <p id="description">
+          Ajude-nos a melhorar nosso serviço respondendo algumas perguntas.
+        </p>
+      </header>
+      <main>
+        <form method="post" id="survey-form">
+          <label id="name-label" for="name"
+            >Nome:<input
+              type="text"
+              id="name"
+              placeholder="Digite seu nome"
+              required
+          /></label>
+          <label id="email-label" for="email"
+            >E-mail:<input
+              type="email"
+              id="email"
+              placeholder="Digite seu email"
+              required
+          /></label>
+          <label id="number-label" for="number"
+            >Idade (Opcional):<input
+              type="number"
+              id="number"
+              min="13"
+              max="120"
+              placeholder="Idade"
+          /></label>
+          <label for="dropdown">
+            Qual opção melhor descreve sua função atual?
+            <select id="dropdown">
+              <option>Selecione a sua função atual</option>
+              <option>Estudante</option>
+              <option>Trabalhando</option>
+              <option>Prefiro não dizer</option>
+              <option>Outro</option>
+            </select>
+          </label>
+          <p>Você recomendaria o nosso serviço a um amigo?</p>
+          <label for="recommend-yes"
+            ><input
+              id="recommend-yes"
+              name="recommend"
+              type="radio"
+              value="Sim"
+            />
+            Sim</label
+          >
+          <label for="recommend-no"
+            ><input
+              id="recommend-no"
+              name="recommend"
+              type="radio"
+              value="Não"
+            />
+            Não</label
+          >
+          <label for="recommend-maybe"
+            ><input
+              id="recommend-maybe"
+              name="recommend"
+              type="radio"
+              value="Talvez"
+            />
+            Talvez</label
+          >
+          <p>
+            Quais recursos você gostaria de ver em nosso serviço? (Selecione
+            todas as opções aplicáveis)
+          </p>
+          <label for="feature1"
+            ><input
+              id="feature1"
+              name="features"
+              type="checkbox"
+              value="Chat ao vivo"
+            />
+            Chat ao vivo</label
+          >
+          <label for="feature2"
+            ><input
+              id="feature2"
+              name="features"
+              type="checkbox"
+              value="Mais conteúdo educacional"
+            />
+            Mais conteúdo educacional</label
+          >
+          <label for="feature3"
+            ><input
+              id="feature3"
+              name="features"
+              type="checkbox"
+              value="Fórum de discussão"
+            />
+            Fórum de discussão</label
+          >
+          <p>Comentários adicionais:</p>
+          <textarea
+            id="comments"
+            placeholder="Deixe seus comentários aqui"
+          ></textarea>
+          <input type="submit" id="submit" value="Enviar" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
