@@ -1,80 +1,101 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  background-color: #cfcef8;
-  margin: 0;
-  padding: 0;
+body{
+    font-family: Arial, sans-serif;
+    font-size: 15px;
 }
 
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
+header{
+    background-image: linear-gradient(to bottom, rgb(255, 224, 180), rgb(255, 255, 255));
+    margin: 0;
 }
 
-header {
-  text-align: center;
-  margin-bottom: 30px;
+.logotipo{
+    width: 100px;
+    margin: 5px;
+    padding: 5px 30px;
 }
 
-#title {
-  font-size: 24px;
-  margin-bottom: 10px;
+.titulo_pag{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin: 10px 30px 10px;
 }
 
-#description {
-  color: #666;
+hr{
+    background-color: #b1b0b0;
+    width: 95%;
+    height: 3px;
+    border-radius: 10px;
+    opacity: 0.3;
 }
 
-form {
-  margin-bottom: 20px;
+.tabela_tabela{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    justify-content: center;
+    width: 95%;
 }
 
-label {
-  display: block;
-  margin-bottom: 10px;
+.titulo{ 
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 600px;
+    background-color: rgb(215, 219, 219);
+    border: 1px solid #b1b0b0;
 }
 
-input[type='text'],
-input[type='email'],
-input[type='number'],
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-bottom: 10px;
-  font-size: 16px;
+
+.cliente td{
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+    border: 1px solid #c5c3c3;
 }
 
-select {
-  height: 40px;
+.alertaMax{
+    background-color: red;
 }
 
-input[type='submit'] {
-  width: 60%;
-  background-color: #7972df;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  margin: 0 auto;
-  display: block;
+.alertaMin{
+    color: red;
 }
 
-input[type='submit']:hover {
-  background-color: #4557a1;
+/*Estilização do footer*/
+
+footer{
+    font-style: italic;
+    position: fixed; /*relative*/
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgb(255, 224, 180));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
 }
 
-.checkbox-label {
-  display: inline-block;
-  margin-right: 10px;
+footer p{
+    margin: auto;
 }
 
-textarea {
-  resize: vertical;
+/*Estilização botão add_form*/
+
+.botao_add {
+    background-color: antiquewhite;
+    border-radius: 50%;
+    position: fixed;
+    right: 5%;
+    bottom: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
 }
+
+ion-icon {
+    font-size: 55px;
+}
+

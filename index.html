@@ -1,118 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1 id="title">Formulário de Pesquisa</h1>
-        <p id="description">
-          Ajude-nos a melhorar nosso serviço respondendo algumas perguntas.
-        </p>
-      </header>
-      <main>
-        <form method="post" id="survey-form">
-          <label id="name-label" for="name"
-            >Nome:<input
-              type="text"
-              id="name"
-              placeholder="Digite seu nome"
-              required
-          /></label>
-          <label id="email-label" for="email"
-            >E-mail:<input
-              type="email"
-              id="email"
-              placeholder="Digite seu email"
-              required
-          /></label>
-          <label id="number-label" for="number"
-            >Idade (Opcional):<input
-              type="number"
-              id="number"
-              min="13"
-              max="120"
-              placeholder="Idade"
-          /></label>
-          <label for="dropdown">
-            Qual opção melhor descreve sua função atual?
-            <select id="dropdown">
-              <option>Selecione a sua função atual</option>
-              <option>Estudante</option>
-              <option>Trabalhando</option>
-              <option>Prefiro não dizer</option>
-              <option>Outro</option>
-            </select>
-          </label>
-          <p>Você recomendaria o nosso serviço a um amigo?</p>
-          <label for="recommend-yes"
-            ><input
-              id="recommend-yes"
-              name="recommend"
-              type="radio"
-              value="Sim"
-              checked
-            />
-            Sim</label
-          >
-          <label for="recommend-no"
-            ><input
-              id="recommend-no"
-              name="recommend"
-              type="radio"
-              value="Não"
-            />
-            Não</label
-          >
-          <label for="recommend-maybe"
-            ><input
-              id="recommend-maybe"
-              name="recommend"
-              type="radio"
-              value="Talvez"
-            />
-            Talvez</label
-          >
-          <p>
-            Quais recursos você gostaria de ver em nosso serviço?
-          </p>
-          <label for="feature1"
-            ><input
-              id="feature1"
-              name="features"
-              type="checkbox"
-              value="Chat ao vivo"
-              checked
-            />
-            Chat ao vivo</label
-          >
-          <label for="feature2"
-            ><input
-              id="feature2"
-              name="features"
-              type="checkbox"
-              value="Mais conteúdo educacional"
-            />
-            Mais conteúdo educacional</label
-          >
-          <label for="feature3"
-            ><input
-              id="feature3"
-              name="features"
-              type="checkbox"
-              value="Fórum de discussão"
-            />
-            Fórum de discussão</label
-          >
-          <p>Comentários adicionais:</p>
-          <textarea
-            id="comments"
-            placeholder="Deixe seus comentários aqui"
-          ></textarea>
-          <input type="submit" id="submit" value="Enviar" />
-        </form>
-      </main>
-    </div>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaLima</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="assets/Logotipo-farma.png" class="logotipo" alt="Logotipo">
+    </header>
+    <main>
+        <h1 class="titulo_pag">Lista de Encomendas</h1>
+        <hr>
+        <!-- Tabela  -->
+        <table class="tabela_tabela">
+            <!-- Cabeçalho da tabela  -->
+            <tr class="linha">
+                <th class="titulo">Nome</th>
+                <th class="titulo">Produto</th>
+                <th class="titulo">Quantidade</th>
+                <th class="titulo">Valor Unitário</th>
+                <th class="titulo">Total</th>
+            </tr>
+            <!-- Cotéudo da tabela  -->
+            <tr class="cliente" ondblclick="apagaLinha(this)">
+                <td class="info-nome">Juliana</td>
+                <td class="info-produto">Dipirona</td>
+                <td class="info-quant">2</td>
+                <td class="info-valor">4</td>
+                <td class="info-total">4</td>
+            </tr>
+            <tr class="cliente" ondblclick="apagaLinha(this)">
+                <td class="info-nome">Jorge</td>
+                <td class="info-produto">Protetor Solar</td>
+                <td class="info-quant">8</td>
+                <td class="info-valor">5</td>
+                <td class="info-total">104</td>
+            </tr>
+            <tr class="cliente" ondblclick="apagaLinha(this)">
+                <td class="info-nome">Lucas</td>
+                <td class="info-produto">Vitamina C</td>
+                <td class="info-quant">dhg</td>
+                <td class="info-valor">5</td>
+                <td class="info-total">20</td>
+            </tr>
+            <tr class="cliente" ondblclick="apagaLinha(this)">
+                <td class="info-nome">Alice</td>
+                <td class="info-produto">Deo Colônia Phebo Alfazema Provençal com 200ml</td>
+                <td class="info-quant">6</td>
+                <td class="info-valor">0</td>
+                <td class="info-total">57</td>
+            </tr>
+        </table>
+        
+        <div class="botao_add" onclick="popForm()">
+            <ion-icon name="add-circle-outline"></ion-icon>
+        </div>
+    </main>
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Farma Lima</p>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

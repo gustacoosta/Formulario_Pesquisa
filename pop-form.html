@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar nova encomenda</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="pop-form.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Adicionar nova encomenda:</h1>
+        <hr>
+        <form id="adicionarEncomenda" >
+            <label for='ipNome'>Nome: <input id="ipNome" type="text"  placeholder="Digite o nome do cliente." required></label>
+            <label for="ipProd">Produto: <input id="ipProd" type="text"  placeholder="Digite o nome do produto." required></label>
+            <label for="ipQtde">Quantidade: <input id="ipQtde" type="number" min="1" required></label>
+            <label for="ipVUni">Valor Unitário (R$): <input id="ipVUni" type="number" min="1" required></label>
+            <input type="submit" value="Adicionar" id="btnAdicionar">
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
